@@ -1,0 +1,91 @@
+@use "styles/partials/colors" as *;
+@use "styles/partials/variables" as *;
+@use "styles/partials/fonts" as *;
+@use "styles/partials/mixins" as *;
+@use "styles/partials/global" as *;
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $col-white;
+  color: $col-text;
+  font-family: "Titillium Web", Verdana, Geneva, Tahoma, sans-serif;
+}
+label, input, textarea, option, select, button {
+  font-family: "Titillium Web", Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+p, .body--large {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  @include tablet-query {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+.body--medium {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  @include tablet-query {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.body--small {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  @include tablet-query {
+    font-size: .75rem;
+    line-height: 1.125rem;
+  }
+}
+h1 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  @include tablet-query {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  @include tablet-query{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+h3, label {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  @include tablet-query {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.label--radio {
+  font-weight: 400;
+}
+h4 {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $col-columnheaders;
+
+  @include tablet-query {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
