@@ -9,7 +9,6 @@ import "./LoginPage.scss";
 // import Header from "../../components/Header/Header";
 
 function LoginPage() {
-const navigate = useNavigate()
   return(
     <div>
       <h1>Login Page</h1>

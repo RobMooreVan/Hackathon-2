@@ -1,8 +1,12 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function MainPage() {
   return (
-    <div>MainPage</div>
+    <>
+    <div>Dashboard</div>
+    <Link to="/retention">Link to retention page</Link>
+    </>
   )
 }
 
