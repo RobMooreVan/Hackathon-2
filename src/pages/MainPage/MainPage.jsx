@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import arrow from "../../assets/icons/arrow.svg"
+import ChatBar from '../../components/ChatBar/ChatBar'
 
 function MainPage() {
   return (
@@ -14,6 +15,7 @@ function MainPage() {
 
     <button className='tag tag--light'>Tag test 1</button>
     <button className='tag tag--dark'>Tag test 2</button>
+    <ChatBar />
     </div>
     </>
   )
