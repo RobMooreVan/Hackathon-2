@@ -5,23 +5,26 @@
 
 .dash{
     &-title{
+        font-size: 3rem;
+        padding: 6rem;
         
     }
     &-icon{
-        width: 10rem;
+        width: 19rem;
         margin-top: 0.5rem;
-        height: 10rem;
+        height: 19rem;
         object-fit: scale-down;
     }
     &-icon1{
-        width: 10.5rem;
-        height: 10.5rem;
+        width: 19.5rem;
+        height: 19.5rem;
         object-fit: scale-down;
     }
     &-container{
-        
         gap: 10rem;
         display: flex;
-
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 8rem;
     }
 }
