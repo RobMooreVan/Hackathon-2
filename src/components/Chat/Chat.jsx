@@ -5,8 +5,10 @@ import chatbtn from "../../assets/icons/chat.svg";
 import chatbox from "../../assets/images/ChatBoxMainPage.svg";
 import chatbox2 from "../../assets/images/ChatBoxRetention.svg";
 import chatbox3 from "../../assets/images/ChatBoxRetention2.svg";
+import { useNavigate } from "react-router-dom";
 
 function Chat({ chatState }) {
+  const navigate = useNavigate();
   const [chat, setChat] = useState(false);
 
   const handleClick = (e) => {
@@ -17,6 +19,7 @@ function Chat({ chatState }) {
 
   const handleChange = () => {
     setIsAdvanced(!isAdvanced);
+    navigate("/advance");
   };
 
   return (

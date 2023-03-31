@@ -10,8 +10,6 @@ function TwoRetentionPage({ chatState, handleChatContent }) {
   return (
     <>
       <div className="page-layout">
-        {" "}
-        {/* do not touch pls */}
         <Chat chatState={chatState} />
         <h2 className="date">March 2023</h2>
         <h1 className="header">Connie, here are your top risks:</h1>
