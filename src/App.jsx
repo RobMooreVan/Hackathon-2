@@ -3,6 +3,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import MainPage from "./pages/MainPage/MainPage";
 import RetentionPage from "./pages/RetentionPage/RetentionPage";
 import TwoRetentionPage from "./pages/TwoRetentionPage/TwoRetentionPage";
+import AdvancePage from "./pages/AdvancePage/AdvancePage";
 import './App.scss';
 import NavBar from "./components/NavBar/NavBar";
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/main" element={<MainPage />} />
         <Route path="/retention" element={<RetentionPage />} />
         <Route path="/tworetention" element={<TwoRetentionPage />} />
+        <Route path="/advance" element={<AdvancePage />} />
       </Routes>
     </BrowserRouter>
   );
