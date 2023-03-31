@@ -10,7 +10,7 @@ function TwoRetentionPage({ chatState, handleChatContent }) {
   return (
     <>
       <div className="page-layout">
-        {" "}
+
         <Chat chatState={chatState} />
         <div className="row">
         <h1 className="header">Connie, here are your top risks:</h1>

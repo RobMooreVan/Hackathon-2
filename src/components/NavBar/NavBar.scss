@@ -38,3 +38,9 @@
     }
   }
 }
+.flip{
+  transform: scaleX(-1);
+  position: absolute;
+  left: 100px;
+  top: 40px;
+}
