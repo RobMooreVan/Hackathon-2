@@ -4,13 +4,13 @@ import MainPage from "./pages/MainPage/MainPage";
 import RetentionPage from "./pages/RetentionPage/RetentionPage";
 import TwoRetentionPage from "./pages/TwoRetentionPage/TwoRetentionPage";
 import AdvancePage from "./pages/AdvancePage/AdvancePage";
-import './App.scss';
+import "./App.scss";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (
     <BrowserRouter>
-    <NavBar/>
+      <NavBar />
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/main" element={<MainPage />} />
