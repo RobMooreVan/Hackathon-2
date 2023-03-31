@@ -2,3 +2,129 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials//mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+
+.scale{
+    transform: scale(1.35);
+    position: relative;
+    top: 8rem;
+}
+.retention {
+    &__title {
+        font-size: 36px;
+
+        &--layout {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 25px;
+    }
+}
+
+.box {
+    &__container {
+        width: 250px;
+        height: 210px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform .3s;
+        padding: 1rem;
+
+        &:hover {
+            animation-timing-function: ease-in;
+            transform: scale(1.05);
+            box-shadow: 2px 2px 2px gray;
+        }
+    }
+
+    &__date {
+        font-size: 0.9rem;
+
+    }
+
+    &__graph {
+        width: 13rem;
+    }
+
+    &__header {
+        font-size: 1rem;
+    }
+
+    &__bigcontainer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.riska {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+
+    &__title1 {
+        font-size: 1.2rem;
+        background-color: #ECF0F5;
+        padding: 1.5rem 1rem;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    &__title2 {
+        background-color: #F6FCF3;
+        font-size: 1.2rem;
+        padding: 1.5rem 1rem;
+        width: 12rem;
+        margin-bottom: 1rem;
+    }
+
+    &__table {
+        display: flex;
+        &__layout {
+
+        }
+        &__title {
+            padding: 1.5rem 3rem;
+            font-size: 1.3rem;
+            background-color: #ECF0F5;
+        }
+        &__title1 {
+            padding: 2.44rem 3rem;
+            font-size: 1.2rem;
+            background-color: #ECF0F5;
+            color: #DA0000;
+        }
+        &__title2 {
+            padding: 1.55rem 1.7rem;
+            background-color: #ECF0F5;
+            width: 6rem;            
+        }
+
+    }
+
+    &__profiles {
+        width: 17rem;
+        padding: 2rem;
+        background-color: #ECF0F5;
+        object-fit: scale-down;
+    }
+}
+
+.bg{
+    background-color: #ECF0F5;
+padding-top: 5.2rem;
+display: flex;
+flex-direction: column;
+}
