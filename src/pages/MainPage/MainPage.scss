@@ -2,3 +2,26 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials//mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+.dash{
+    &-title{
+        
+    }
+    &-icon{
+        width: 10rem;
+        margin-top: 0.5rem;
+        height: 10rem;
+        object-fit: scale-down;
+    }
+    &-icon1{
+        width: 10.5rem;
+        height: 10.5rem;
+        object-fit: scale-down;
+    }
+    &-container{
+        
+        gap: 10rem;
+        display: flex;
+
+    }
+}
