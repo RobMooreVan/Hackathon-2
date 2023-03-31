@@ -1,19 +1,22 @@
-$col-text: #13182c; // instock-black
-$col-header-btn-bg: #BDC5D5; 
-$col-interactive: #2e66e5; // instock-indigo
-$col-white: #ffffff; // global white
+//Main Colors
+$primary: #1E293B;
+$secondary: #24A3A9;
+$background: #FFFFFF;
+$background-2: #F8FAFC;
+$btn-text: #1B7A7F;
+$btn-background: #EAFAFB;
 
-$col-columnheaders: #5c667e; // Slate
-$col-dividers: #bdc5d5; // cloud
+//Chart colors
+$chart-red: #f3849d;
+$chart-green: #95E8A3;
+$chart-blue: #1aa5e2;
+$chart-green-2: #b5c75a;
+$chart-grey: #ecf0f5;
 
-$col-header-background: #232940; // Graphite
-$col-page-background: #f7f8f9; // Light Grey
-
-$col-instock: #158463; // green
-$col-outofstock: #c94515; // red
-
-$col-delete-button: #c94515; // red
-$col-delete-button-hover: #232940; 
-$col-cancel-button: white; 
-
-$nav-unselected: #bdc5d5; // cloud
+//Other
+$yellow-1: #AD8C37;
+$yellow-2: #FFFCF4;
+$blue-1: #2A1768;
+$blue-2: #F6F4FB;
+$green-1: #406E22;
+$green-2: #F6FCF3;
