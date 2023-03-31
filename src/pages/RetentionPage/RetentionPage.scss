@@ -3,12 +3,18 @@
 @use '../../styles/partials//mixins' as *;
 @use '../../styles/partials/variables' as *;
 
+
+.scale{
+    transform: scale(1.35);
+    position: relative;
+    top: 8rem;
+}
 .retention {
     &__title {
         font-size: 36px;
 
         &--layout {
-            padding: 4rem 0 2rem;
+            padding: 2rem;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -62,11 +68,11 @@
     }
 }
 
-.risk {
+.riska {
     display: flex;
     flex-direction: row;
     justify-content: center;
-padding: 2rem;
+    padding: 2rem;
 
     &__title1 {
         font-size: 1.2rem;
@@ -101,7 +107,7 @@ padding: 2rem;
             color: #DA0000;
         }
         &__title2 {
-            padding: 1.5rem 1.7rem;
+            padding: 1.55rem 1.7rem;
             background-color: #ECF0F5;
             width: 6rem;            
         }
@@ -119,4 +125,6 @@ padding: 2rem;
 .bg{
     background-color: #ECF0F5;
 padding-top: 5.2rem;
+display: flex;
+flex-direction: column;
 }

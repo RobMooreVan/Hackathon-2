@@ -66,12 +66,8 @@ function TwoRetentionPage() {
                     <p></p>
                   </div>
                 </div>
-
             </div>
-
         </div>
-
-        <Link to="/main">Link to main page</Link>
       </div>
     </>
 
