@@ -12,7 +12,6 @@ function AdvancePage() {
       <div className="page-layout">
         {" "}
         {/* do not touch pls */}
-        <Chat />
         <section className="advance">
           <div className="advance-top">
             <h2 className="advance-title">Who is leaving?</h2>
