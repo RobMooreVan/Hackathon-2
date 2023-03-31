@@ -10,9 +10,12 @@ function TwoRetentionPage({ chatState, handleChatContent }) {
   return (
     <>
       <div className="page-layout">
+
         <Chat chatState={chatState} />
-        <h2 className="date">March 2023</h2>
+        <div className="row">
         <h1 className="header">Connie, here are your top risks:</h1>
+        <h2 className="date">March 2023</h2>
+        </div>
         <div className="wrapper__main">
           <div className="wrapper-left">
             <div className="wrapper__left--top">

@@ -3,6 +3,9 @@
 @use "../../styles/partials//mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+.page-layout1{
+  margin-left: 66px;
+}
 .advance {
   padding: 0 1rem;
   text-align: center;
