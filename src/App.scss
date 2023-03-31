@@ -12,8 +12,8 @@
   padding: 0;
 }
 body {
-  background: $col-white;
-  color: $col-text;
+  background: $background;
+  color: $primary;
   font-family: "Titillium Web", Verdana, Geneva, Tahoma, sans-serif;
 }
 label, input, textarea, option, select, button {
@@ -82,7 +82,7 @@ h4 {
   line-height: 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: $col-columnheaders;
+  color: $primary;
 
   @include tablet-query {
     font-size: 0.75rem;
