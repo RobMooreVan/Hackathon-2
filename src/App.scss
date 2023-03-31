@@ -4,11 +4,11 @@
 @use "styles/partials/mixins" as *;
 @use "styles/partials/global" as *;
 
-.content{
+.content {
   margin-left: 20px;
   flex-grow: 1;
 }
-*, 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -18,10 +18,21 @@
 body {
   background: $background;
   color: $primary;
-  font-family: "Titillium Web", Verdana, Geneva, Tahoma, sans-serif;
 }
-label, input, textarea, option, select, button {
-  font-family: "Titillium Web", Verdana, Geneva, Tahoma, sans-serif;
+label,
+input,
+textarea,
+option,
+select,
+button,
+p {
+  font-family: "Graphik-Regular,sans-serif";
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cera Pro Bold,sans-serif";
 }
 a {
   text-decoration: none;
@@ -29,7 +40,8 @@ a {
 ul {
   list-style-type: none;
 }
-p, .body--large {
+p,
+.body--large {
   font-size: 0.9375rem;
   line-height: 1.625rem;
   @include tablet-query {
@@ -49,7 +61,7 @@ p, .body--large {
   font-size: 0.6875rem;
   line-height: 1rem;
   @include tablet-query {
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
@@ -64,12 +76,13 @@ h1 {
 h2 {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  @include tablet-query{
+  @include tablet-query {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
-h3, label {
+h3,
+label {
   font-size: 0.8125rem;
   line-height: 1.25rem;
   font-weight: 600;

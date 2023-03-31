@@ -1,234 +1,230 @@
 @use "./mixins" as *;
 @use "./colors" as *;
 
-
 // CTA Buttons
 .cta {
-    height: 24px;
-    padding: 0 1rem;
-    border-radius: .375rem;
-    white-space: nowrap;
-    margin: 1rem;
-    // border: none;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    
-    &--light {
-        background-color: $btn-background;//possibly primary**
-        color: $btn-text;
-        border: .0625rem solid $btn-background;
-        
-        &:hover {
-            // background-color: $col-text;
-            // color: $col-white;
-        }
-    }
-    &--dark {
-        background-color: $btn-text;//possibly primary**
-        color:  $btn-background;
-        border: .0625rem solid $btn-text;
-        // background-color: $col-white;
-        // outline: 1px solid $col-dividers;
+  height: 24px;
+  padding: 0 1rem;
+  border-radius: 0.375rem;
+  white-space: nowrap;
+  margin: 1rem;
+  // border: none;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
-        &:hover, &:active, &:focus {
-            // outline: 1px solid $col-interactive;
-        }
-    }
-    &--edit {
-        // width: fit-content;
-        // padding: 1.2rem 0.5rem;
+  &--light {
+    background-color: $btn-background; //possibly primary**
+    color: $btn-text;
+    border: 0.0625rem solid $btn-background;
 
+    &:hover {
+      // background-color: $col-text;
+      // color: $col-white;
     }
+  }
+  &--dark {
+    background-color: $btn-text; //possibly primary**
+    color: $btn-background;
+    border: 0.0625rem solid $btn-text;
+    // background-color: $col-white;
+    // outline: 1px solid $col-dividers;
 
+    &:hover,
+    &:active,
+    &:focus {
+      // outline: 1px solid $col-interactive;
+    }
+  }
+  &--edit {
+    // width: fit-content;
+    // padding: 1.2rem 0.5rem;
+  }
 }
 
 // In and Out of Stock tags
 .tag {
-    height: 1.5rem;
-    border-radius: .375rem;
-    margin: 1rem;
-    padding: 0 1rem;
-    border: .0625rem solid $primary;
-    
-    
-    &--light {
-        background-color: $primary;
-        // border: .0625rem solid $primary;
-        color: $btn-background;
-        }
-    &--dark {
-        background-color: $btn-background;
-        color: $primary;
-        }   
+  height: 1.5rem;
+  border-radius: 0.375rem;
+  margin: 1rem;
+  padding: 0 1rem;
+  border: 0.0625rem solid $primary;
+
+  &--light {
+    background-color: $primary;
+    // border: .0625rem solid $primary;
+    color: $btn-background;
+  }
+  &--dark {
+    background-color: $btn-background;
+    color: $primary;
+  }
 }
 
 // RELATED TO PAGE STRUCTURE
 .content {
-    // background-color: $col-header-background;// $col-white;
-    // width: 100%;
-    // // padding: 0 1rem;
+  // background-color: $col-header-background;// $col-white;
+  // width: 100%;
+  // // padding: 0 1rem;
 
-    // display: flex;
-    // justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
+  // position: relative;
+
+  &__wrapper-outer {
     // position: relative;
+    // top: -5rem;
+    // width: 100%;
+    // padding: 0 1rem;
+  }
+  &__wrapper {
+    // background-color: $col-white;
+    // overflow: hidden;
+    // border-radius: 0.25rem;
+    // box-shadow: 0 10px 10px 0 $col-dividers;
+  }
+  &__header {
+    // display: flex;
+    // flex-flow: column nowrap;
+    // gap: 1rem;
 
-    &__wrapper-outer {
-        // position: relative;
-        // top: -5rem;
-        // width: 100%;
-        // padding: 0 1rem;
-    }
-    &__wrapper {
-        // background-color: $col-white;
-        // overflow: hidden;
-        // border-radius: 0.25rem;
-        // box-shadow: 0 10px 10px 0 $col-dividers;
-    }
-    &__header {
-        // display: flex;
-        // flex-flow: column nowrap;
-        // gap: 1rem;
+    // padding: 2rem 1.5rem 1.5rem;
+    // border-bottom: 1px solid $col-dividers;
 
-        // padding: 2rem 1.5rem 1.5rem;
-        // border-bottom: 1px solid $col-dividers;
-
-        &--form {
-            // display: flex;
-            // flex-flow: row nowrap;
-            // justify-content: flex-start;
-            // align-items: baseline;
-            // @include tablet-query {
-            //     border-bottom: 1px solid $col-dividers;
-            // }
-        }
-        &--details {
-            // justify-content: space-between;
-            // align-items: center;
-        }
-        &-buttons {
-            // display: flex;
-            // flex-flow: column nowrap;
-            // gap: 1rem;
-        }
-        &-arrow img {
-            padding-bottom: 0.5rem;
-        }
-        // Used to put h1 and back arrow together when there are multiple other items in the row
-        &-subgroup {
-            display: flex;
-            align-items:center;
-            gap: 0.4rem;
-        }
+    &--form {
+      // display: flex;
+      // flex-flow: row nowrap;
+      // justify-content: flex-start;
+      // align-items: baseline;
+      // @include tablet-query {
+      //     border-bottom: 1px solid $col-dividers;
+      // }
     }
+    &--details {
+      // justify-content: space-between;
+      // align-items: center;
+    }
+    &-buttons {
+      // display: flex;
+      // flex-flow: column nowrap;
+      // gap: 1rem;
+    }
+    &-arrow img {
+      padding-bottom: 0.5rem;
+    }
+    // Used to put h1 and back arrow together when there are multiple other items in the row
+    &-subgroup {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
 }
 
-
-.modal{
-    &__delete {
-        &--confirm{
-            // background: $col-delete-button;
-            border-width: 0px;
-            &:hover{
-                // background: $col-delete-button-hover;
-                border-width: 0px;
-            }
-        }
-        &--cancel{
-            // background: $col-cancel-button;
-            // color: $col-columnheaders;
-            &:hover{
-                // color: $col-interactive;
-                // background: $col-cancel-button;
-                // border: 1px solid $col-interactive;
-            }
-        }
+.modal {
+  &__delete {
+    &--confirm {
+      // background: $col-delete-button;
+      border-width: 0px;
+      &:hover {
+        // background: $col-delete-button-hover;
+        border-width: 0px;
+      }
+    }
+    &--cancel {
+      // background: $col-cancel-button;
+      // color: $col-columnheaders;
+      &:hover {
+        // color: $col-interactive;
+        // background: $col-cancel-button;
+        // border: 1px solid $col-interactive;
+      }
+    }
+  }
+  &__button {
+    border-radius: 20px;
+    width: 46%;
+    height: 36px;
+    font-size: 14px;
+  }
+  &-header {
+    padding-bottom: 0px;
+    font-weight: bold;
+    // border-bottom:0px solid $col-dividers;
+  }
+  &-content {
+    padding: 16px;
+    height: 100vh;
+    border-radius: 4px;
+  }
+  &-footer {
+    // border-top: 0px solid $col-dividers;
+    padding: 0;
+  }
+  &-title {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  &-body {
+    font-size: 13px;
+  }
+  @include tablet-query {
+    &-content {
+      height: auto;
+      top: 160px;
+      width: 90vh;
+    }
+    &-title {
+      margin-top: 0px;
     }
     &__button {
-        border-radius: 20px;
-        width: 46%;
-        height: 36px;
-        font-size: 14px;
+      width: 71px;
     }
-    &-header{
-        padding-bottom: 0px;
-        font-weight: bold;
-        // border-bottom:0px solid $col-dividers;
+    &-footer {
+      padding-right: 32px;
+      padding-bottom: 8px;
     }
-    &-content{
-        padding: 16px;
-        height: 100vh;
-        border-radius: 4px;
-    }
-    &-footer{
-        // border-top: 0px solid $col-dividers;
-        padding: 0;
-    }
-    &-title{
-        font-weight: bold;
-        margin-top: 30px;
-    }
-    &-body{
-        font-size: 13px;
-    }
-    @include tablet-query {
-        &-content{
-            height: auto;
-            top: 160px;
-            width: 90vh;
-        }
-        &-title{
-            margin-top: 0px;
-        }
-        &__button {
-            width: 71px;
-        }
-        &-footer{
-            padding-right: 32px;
-            padding-bottom: 8px;
-        }
-
-    }
-    
+  }
 }
 
-.btn-close{
-    position: relative;
-    top: -50px;
+.btn-close {
+  position: relative;
+  top: -50px;
+  left: 10px;
+  @media (min-width: 406px) {
+    top: -35px;
     left: 10px;
-    @media (min-width: 406px){
-        top: -35px;
-        left: 10px;
-    }
+  }
 }
 
 .select {
-    &__field {
-        /* remove default caret */
-        -webkit-appearance: none; /* webkit browsers */
-        -moz-appearance: none; /* firefox */
-        appearance: none; /* modern browsers */
-        width: 100%;
+  &__field {
+    /* remove default caret */
+    -webkit-appearance: none; /* webkit browsers */
+    -moz-appearance: none; /* firefox */
+    appearance: none; /* modern browsers */
+    width: 100%;
+  }
+
+  &__wrapper {
+    // overflow:visible;
+    position: relative;
+
+    &::after {
+      // content: url(../../assets/icons/arrow_drop_down-24px.svg);
+      font-size: 1rem;
+
+      pointer-events: none;
+      position: absolute;
+      right: 1rem;
+      top: 0.4rem;
+      z-index: 1;
     }
-
-    &__wrapper {
-        // overflow:visible;
-        position: relative;
-
-        &::after {
-            // content: url(../../assets/icons/arrow_drop_down-24px.svg);
-            font-size: 1rem;
-
-            pointer-events: none;
-            position: absolute;
-            right: 1rem;
-            top: 0.4rem;
-            z-index: 1;
-        }
-        &:focus-within::after {
-            // Changes the drop down caret svg icon to blue on focus
-            filter: invert(33%) sepia(91%) saturate(1136%) hue-rotate(200deg) brightness(93%) contrast(94%);
-        }
+    &:focus-within::after {
+      // Changes the drop down caret svg icon to blue on focus
+      filter: invert(33%) sepia(91%) saturate(1136%) hue-rotate(200deg)
+        brightness(93%) contrast(94%);
     }
+  }
 }
