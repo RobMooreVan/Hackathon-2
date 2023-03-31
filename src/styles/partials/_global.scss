@@ -1,46 +1,33 @@
 @use "./mixins" as *;
 @use "./colors" as *;
 
-@keyframes slide {
-    from {
-        left: 0px;
-    }
-    to {
-        left: 4px;
-    }
-}
-
-
 
 // CTA Buttons
 .cta {
-    // height: 2.25rem;
+    height: 24px;
+    padding: 0 1rem;
+    border-radius: .375rem;
+    white-space: nowrap;
+    margin: 1rem;
     // border: none;
-    // border-radius: 1.25rem;
-    // padding: 0 1rem;
-    // white-space: nowrap;
-
     // display: flex;
     // justify-content: center;
     // align-items: center;
-
-    // width: 100%;
-
-    @include tablet-query {
-        // width: fit-content;
-        // height: 2.375rem;
-    }
-
-    &--add {
-        // background-color: $col-interactive;
-        // color: $col-white;
-
+    
+    &--light {
+        background-color: $btn-background;//possibly primary**
+        color: $btn-text;
+        border: .0625rem solid $btn-background;
+        
         &:hover {
             // background-color: $col-text;
             // color: $col-white;
         }
     }
-    &--cancel {
+    &--dark {
+        background-color: $btn-text;//possibly primary**
+        color:  $btn-background;
+        border: .0625rem solid $btn-text;
         // background-color: $col-white;
         // outline: 1px solid $col-dividers;
 
@@ -52,36 +39,28 @@
         // width: fit-content;
         // padding: 1.2rem 0.5rem;
 
-        @include tablet-query {
-            // padding: 0 1rem;
-        }
     }
 
 }
 
 // In and Out of Stock tags
 .tag {
-    // height: 1.5rem;
-    // border: none;
-    // border-radius: 1.25rem;
-    // width: fit-content;
-    // padding: 0 0.5rem;
-
-    // font-weight: 600;
-    // text-transform: uppercase;
-
-    @include tablet-query {
-        // height: 1.625rem;
-    }
-
-    // &--instock {
-    //     background-color: rgb(21, 132, 99, 0.07);
-    //     color: $col-instock;
-    // }
-    // &--outofstock {
-    //     background-color: rgb(201, 69, 21, 0.07);
-    //     color: $col-outofstock;
-    // }
+    height: 1.5rem;
+    border-radius: .375rem;
+    margin: 1rem;
+    padding: 0 1rem;
+    border: .0625rem solid $primary;
+    
+    
+    &--light {
+        background-color: $primary;
+        // border: .0625rem solid $primary;
+        color: $btn-background;
+        }
+    &--dark {
+        background-color: $btn-background;
+        color: $primary;
+        }   
 }
 
 // RELATED TO PAGE STRUCTURE
@@ -100,15 +79,6 @@
         // top: -5rem;
         // width: 100%;
         // padding: 0 1rem;
-
-        @include tablet-query {
-            // padding: 0 2rem;
-            // top: -7.5rem;
-        }
-        @include desktop-query {
-            // max-width: 1400px;
-            // padding: 0 3.9375rem;
-        }
     }
     &__wrapper {
         // background-color: $col-white;
@@ -123,14 +93,6 @@
 
         // padding: 2rem 1.5rem 1.5rem;
         // border-bottom: 1px solid $col-dividers;
-
-        @include tablet-query {
-            // flex-direction: row;
-            // justify-content: space-between;
-
-            // padding: 2.5rem 2rem 2rem;
-            // border-bottom: none;
-        }
 
         &--form {
             // display: flex;
@@ -149,10 +111,6 @@
             // display: flex;
             // flex-flow: column nowrap;
             // gap: 1rem;
-
-            @include tablet-query {
-                flex-direction: row;
-            }
         }
         &-arrow img {
             padding-bottom: 0.5rem;
@@ -242,10 +200,6 @@
     @media (min-width: 406px){
         top: -35px;
         left: 10px;
-    }
-    @include tablet-query {
-        top: -25px;
-        right: -20px;
     }
 }
 
