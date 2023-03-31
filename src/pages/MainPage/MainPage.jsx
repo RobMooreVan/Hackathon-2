@@ -15,7 +15,7 @@ function MainPage({ chatState, handleChatContent }) {
       <div className="page-layout">
         {/* do not touch pls */}
         <Chat chatState={chatState} />
-        <h1 className="dash-title">Welcome, Kathleen! 🙋‍♀️</h1>
+        <h1 className="dash-title">Welcome, Connie! 🙋‍♀️</h1>
         <div className="dash-container">
           <Link to="/retention">
             <img className="dash-icon1" src={people} alt="" />
