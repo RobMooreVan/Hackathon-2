@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import Gallery from "../../components/Gallery/Gallery";
-import Footer from "../../components/Footer/Footer";
+
+import { Link } from "react-router-dom";
+
 // import axios from "axios";
 import "./LoginPage.scss";
 
@@ -10,7 +8,7 @@ import "./LoginPage.scss";
 
 function LoginPage() {
   return(
-    <div>
+    <div className="page-layout">  {/* do not touch pls */}
       <h1>Login Page</h1>
       <div className="login-container">
       <label>Username</label>
