@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams, useLocation} from "react-router-dom";
 import "./Chat.scss";
 import chatbtn from "../../assets/icons/chat.svg";
 import chatbox from "../../assets/images/ChatBoxMainPage.svg";
@@ -10,17 +11,26 @@ import { useNavigate } from "react-router-dom";
 function Chat({ chatState }) {
   const navigate = useNavigate();
   const [chat, setChat] = useState(false);
+  const [isAdvanced, setIsAdvanced] = useState(false);
+  const location = useLocation();
+
+  console.log(location.pathname)
+  useEffect(()=>{
+      if(location.pathname==="/advance"){
+      setIsAdvanced(true)
+    }
+    },[])
 
   const handleClick = (e) => {
     setChat(!chat);
   };
 
-  const [isAdvanced, setIsAdvanced] = useState(false);
-
   const handleChange = () => {
     setIsAdvanced(!isAdvanced);
     navigate("/advance");
   };
+
+
 
   return (
     <div className="chat-layout">
