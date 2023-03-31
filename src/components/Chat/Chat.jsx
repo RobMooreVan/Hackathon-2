@@ -14,7 +14,6 @@ function Chat({ chatState }) {
   const [isAdvanced, setIsAdvanced] = useState(false);
   const location = useLocation();
 
-  console.log(location.pathname)
   useEffect(()=>{
       if(location.pathname==="/advance"){
       setIsAdvanced(true)
@@ -27,10 +26,14 @@ function Chat({ chatState }) {
 
   const handleChange = () => {
     setIsAdvanced(!isAdvanced);
-    navigate("/advance");
+    if(location.pathname!=="/advance"){
+
+      navigate("/advance");
+    }else
+    {
+      navigate(-1)
+    }
   };
-
-
 
   return (
     <div className="chat-layout">
