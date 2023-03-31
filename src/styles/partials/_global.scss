@@ -166,282 +166,24 @@
     }
 }
 
-// ITEM/WAREHOUSE LIST RELATED
-.list {
-    &__header-row {
-        display: none;
-
-        @include tablet-query {
-            display: flex;
-            flex-flow: row nowrap;
-
-            padding: 1rem 2rem;
-
-            background-color: $col-page-background;
-        }
-    }
-    &__header--desktop {
-        display: flex;
-        align-items: center;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-
-    &__row {
-        padding: 1rem 1.5rem;
-
-        display: flex;
-        flex-flow: row wrap;
-
-        border-bottom: 1px solid $col-dividers;
-
-        @include tablet-query {
-            padding: 1rem 2rem;
-        }
-
-        &:last-of-type {
-            border-bottom: none;
-        }
-
-        &--field {
-            margin-bottom: 1rem;
-
-            @include tablet-query {
-                margin-bottom: 0;
-            }
-            &:hover .list__link-icon {
-                animation-name: slide;
-                animation-duration: 0.3s;
-                position: relative;
-                left: 4px;
-            }
-        }
-        &--field-group {
-            display: flex;
-            flex-flow: column nowrap;
-            width: 50%;
-
-            @include tablet-query {
-                flex-direction: row;
-                width: fit-content;
-            }
-        }
-        &--actions-group {
-            width: 100%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-
-            @include tablet-query {
-                width: auto;
-                justify-content: flex-end;
-                gap: 1rem;
-            }
-        }
-    }
-    &__header--mobile {
-        @include tablet-query {
-            display: none;
-        }
-    }
-
-    &__link-field {
-        display: flex;
-        align-items: center;
-
-        font-weight: bold;
-        color: $col-interactive;
-    }
-}
-
-// FORM FIELDS
-.form-field, .form-field--noninput {
-    min-height: 2.375rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 1.25rem;
-    outline: 1px solid $col-dividers;
-
-    width: 100%;
-
-    &::placeholder {
-        color: $col-columnheaders;
- 
-    }
-    &:active,
-    &:focus {
-        outline-color: $col-interactive;
-    }
-
-    &__search {
-        // background-image: url(../../assets/icons/search-24px.svg);
-        background-repeat: no-repeat;
-        background-position: right 1rem center;
-    }
-}
-.form-field {
-    max-height: 2.375rem;
-}
-// FORM PAGES
-.form {
-
-    &__group-wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-        // padding: 1.5rem 1.5rem 0;
-
-        @include tablet-query {
-            flex-flow: row nowrap;
-            // padding: 2rem;
-        }
-    }
-    &__group {
-        display: flex;
-        flex-flow: column nowrap;
-        padding: 1.5rem 1.5rem 0;
-
-        @include tablet-query {
-            width: 50%;
-            padding: 0;
-        }
-
-        &--first {
-            border-bottom: 1px solid $col-dividers;
-            padding-bottom: 0.4rem;
-
-            @include tablet-query {
-                margin: 2rem 0 2rem 2rem;
-                padding-bottom: 0;
-                padding-right: 2rem;
-                border-bottom: none;
-                border-right: 1px solid $col-dividers;
-            }
-
-            // Affects item details page
-            &-details {
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-        }
-        &--second {
-
-            @include tablet-query {
-                margin: 2rem 2rem 0 2rem;
-                padding-top: 0;
-            }
-        }
-        
-        & .form-field, & .form-field--noninput {
-            margin-bottom: 1.2rem;
-            
-            @include tablet-query {
-                margin-bottom: 1.5rem;
-            }
-        }
-
-        // Page specific adjustments for the item details page. Fixes padding in the main details area so it looks good at mobile sizes
-        &-details-page {
-            padding-bottom: none;
-            border-bottom: none;
-
-            &:nth-child(2) {
-                padding-top: 0;
-            }
-
-            & .form__radio-group {
-                margin-bottom: 0.3rem;
-
-                @include tablet-query {
-                    margin-bottom: 1.5rem;
-                }
-            }
-        }
-        
-    }
-    &__radio-group {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items:flex-start;
-        
-        gap: 18%;
-        margin-bottom: 1.5rem;
-
-        &--input {
-            margin-right: 0.25rem;
-        }
-    }
-    
-
-    &__group--buttons {
-        width: 100%;
-        background-color: $col-page-background;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        gap: 1rem;
-        padding: 1rem 1.5rem;
-
-        @include tablet-query {
-            padding: 1rem 2rem;
-            justify-content: flex-end;
-        }
-    }
-    &__subtitle {
-        margin-bottom: 2rem;
-        @include tablet-query {
-            margin-bottom: 2.5rem;
-        }
-    }
-    &__item-desc {
-        @include tablet-query {
-            margin-bottom: 2rem;
-        }
-    }
-    &__error--hide {
-        display: none;
-    }
-    &__error {
-        outline: 2px solid $col-outofstock;
-        display: inline;
-
-        &::before {
-            // background: url('../../assets/icons/error-24px.svg') no-repeat;
-            content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0  This field is required";
-            font-weight: bold;
-            color: $col-outofstock;
-        }
-    }
-}
-
-span.form__error {
-    outline: none;
-    margin-bottom: 1rem;
-}
-
-// Used in form to hide quantity field if select out of stock. 
-// Make sure this comes after the form__error selector in the stylesheet!
-.hide-quantity {
-    display: none;
-}
 
 .modal{
     &__delete {
         &--confirm{
-            background: $col-delete-button;
+            // background: $col-delete-button;
             border-width: 0px;
             &:hover{
-                background: $col-delete-button-hover;
+                // background: $col-delete-button-hover;
                 border-width: 0px;
             }
         }
         &--cancel{
-            background: $col-cancel-button;
-            color: $col-columnheaders;
+            // background: $col-cancel-button;
+            // color: $col-columnheaders;
             &:hover{
-                color: $col-interactive;
-                background: $col-cancel-button;
-                border: 1px solid $col-interactive;
+                // color: $col-interactive;
+                // background: $col-cancel-button;
+                // border: 1px solid $col-interactive;
             }
         }
     }
@@ -454,7 +196,7 @@ span.form__error {
     &-header{
         padding-bottom: 0px;
         font-weight: bold;
-        border-bottom:0px solid $col-dividers;
+        // border-bottom:0px solid $col-dividers;
     }
     &-content{
         padding: 16px;
@@ -462,7 +204,7 @@ span.form__error {
         border-radius: 4px;
     }
     &-footer{
-        border-top: 0px solid $col-dividers;
+        // border-top: 0px solid $col-dividers;
         padding: 0;
     }
     &-title{
