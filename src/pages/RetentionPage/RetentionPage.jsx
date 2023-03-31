@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 function RetentionPage() {
   return (
     <>
-    <div>RetentionPae</div>
+    <div>RetentionPage</div>
     <Link to="/main">Link to main page</Link>
     </>
 
