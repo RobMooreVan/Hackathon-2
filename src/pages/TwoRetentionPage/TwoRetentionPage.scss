@@ -2,3 +2,83 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials//mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+.date{
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 3rem;
+  font-weight: 400;
+
+}
+.header{
+  margin-left: 8vw;
+}
+.wrapper{
+
+  &__main{
+    display: flex;
+    margin: 4rem ;
+    justify-content: center;
+
+  }
+  &__left{
+    display: flex;
+    justify-content: flex-end;
+    &--top{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: -0.5rem;
+    }
+    &--bottom{
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 1rem 5rem;
+      padding-top: 0;
+    }
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    background-color: #ECF0F5;
+    border-radius: 5px;
+    padding: 4rem;
+    width: 691px;
+    gap: 2.5rem;
+  }
+  &__text-box{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.risk{
+  color: #DA0000;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1rem 5rem;
+    border: 1px solid #DA0000;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+  }
+  &--high{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  &--high-alt{
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.img{
+  width: 224px;
+  &--alt{
+    width: 197px;
+    padding-top: 1rem;
+
+  }
+}
