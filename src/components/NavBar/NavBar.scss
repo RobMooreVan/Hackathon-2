@@ -1,0 +1,40 @@
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials//mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.navbar {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        gap: 1.5rem;
+        padding: 0.4rem;
+        align-items: center;
+    }
+
+    &__icons {
+        padding: 0.4rem;
+        width: 40px;
+        background-color: black;
+
+        &-logo {
+            width: 35px;
+            height: 35px;
+            margin-top: 4px;
+
+            &-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                margin: 1rem 0.1rem;
+                background-color: $chart-grey;
+                border-radius: 50%;
+            }
+        }
+    }
+}

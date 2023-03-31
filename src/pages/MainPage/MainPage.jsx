@@ -5,6 +5,7 @@ import arrow from "../../assets/icons/arrow.svg"
 function MainPage() {
   return (
     <>
+    <div className='page-layout'> {/* do not touch pls */}
     <div>Dashboard</div>
     <Link to="/retention">Link to retention page</Link>
     <button className='cta cta--dark'>Button 1</button>
@@ -13,6 +14,7 @@ function MainPage() {
 
     <button className='tag tag--light'>Tag test 1</button>
     <button className='tag tag--dark'>Tag test 2</button>
+    </div>
     </>
   )
 }
