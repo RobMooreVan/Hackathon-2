@@ -1,4 +1,5 @@
-import React from "react";
+import {React} from "react";
+import {Link} from "react-router-dom"
 import "./NavBar.scss";
 import magnifying from "../../assets/icons/magnifying.svg";
 import logo from "../../assets/icons/logo.svg";
@@ -17,7 +18,9 @@ function NavBar() {
         <div className="navbar__icons-logo-container">
           <img className="navbar__icons-logo" src={logo} alt="" />
         </div>
+        <Link to="/main">
         <img className="navbar__icons" src={home} alt="" />
+        </Link>
         <img className="navbar__icons" src={magnifying} alt="" />
         <img className="navbar__icons" src={book} alt="" />
         <img className="navbar__icons" src={bars} alt="" />
