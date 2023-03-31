@@ -9,7 +9,7 @@ import advancecharts from "../../assets/images/advancecharts.svg";
 function AdvancePage() {
   return (
     <>
-      <div className="page-layout">
+      <div className="page-layout1">
         {" "}
         {/* do not touch pls */}
         <section className="advance">

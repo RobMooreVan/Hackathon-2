@@ -3,21 +3,28 @@
 @use '../../styles/partials//mixins' as *;
 @use '../../styles/partials/variables' as *;
 
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .date{
   display: flex;
   justify-content: flex-end;
   margin: 1.5rem 3rem;
   font-weight: 400;
+  margin-left: auto;
 
 }
 .header{
+  padding: 2rem;
   margin-left: 8vw;
 }
 .wrapper{
 
   &__main{
     display: flex;
-    margin: 4rem ;
+    margin: 2rem ;
     justify-content: center;
 
   }
