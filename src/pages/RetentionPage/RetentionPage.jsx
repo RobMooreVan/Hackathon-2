@@ -16,10 +16,7 @@ function RetentionPage({ chatState, handleChatContent }) {
   return (
     <>
       <div className="page-layout">
-        <div>RetentionPage</div>
-        <Chat chatState={chatState} />
-        <Link to="/main">Link to main page</Link>
-      </div>
+    <Chat chatState={chatState} />
       <div className="scale">
         <div className="retention__title--layout">
           <h1 className="retention__title">Addressing Retention Risks</h1>
@@ -76,6 +73,7 @@ function RetentionPage({ chatState, handleChatContent }) {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
